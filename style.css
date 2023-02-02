@@ -1,0 +1,210 @@
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+body{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+
+.title{
+    margin: 0;
+}
+
+#container{
+    background-image: linear-gradient(to top, #aef6ff,#1284EB);
+    width: 90%;
+    height: 500px;
+    border-radius: 40px;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    #container{
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #container{
+        width: 800px;
+    }
+}
+
+#fin{
+    background-image: linear-gradient(to top, #aef6ff,#1284EB);
+    margin-top: 140px;
+    width: 90%;
+    height: 500px;
+    border-radius: 40px;
+    position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+    #fin{
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #fin{
+        width: 800px;
+    }
+}
+
+.premierplan{
+    z-index: 1;
+}
+
+.arrièreplan{
+    z-index: 0;
+}
+
+.front{
+    z-index: 2;
+}
+
+h4{
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    height: 100%;
+}
+
+.moitie{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color:#1284EB;
+    font-size: 40px;
+    font-family: 'Rochester', cursive;
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 60px;
+    }
+}
+
+.green{
+    background-color: rgb(119, 201, 119);
+}
+
+.orange{
+    background-color: rgb(253, 185, 59);
+}
+
+.red{
+    background-color: rgb(255, 103, 103);
+}
+
+input,select{
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Rochester', cursive;
+    font-size: 20px;
+}
+
+select{
+    text-align: center;
+    height: 40px;
+    width: 100px; 
+}
+
+#number{
+    text-align: center;
+    height: 40px;
+    width: 70px; 
+}
+
+#bouton{
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #1284EB;
+    color:white;
+}
+
+#historique{
+    padding: 20px;
+    background-color: white;
+    height: 80%;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    #historique{
+        font-size: 24px;
+    }
+}
+
+
+#historique p{
+    margin: 5px;
+}
+
+.compteur{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #1284EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Rochester', cursive;
+}
+
+.decompte{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    color: #1284EB;
+}
+
+.milieu{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#final{
+    font-size: 60px;
+    color:white;
+}
+
+#reset{
+    height: 80px;
+    width: 200px;
+    font-size: 40px;
+    border: none;
+    background-color: #1284EB;
+    color:white;
+}

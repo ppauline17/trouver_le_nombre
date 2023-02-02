@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <title>Trouve le nombre</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Trouve le nombre</h1>
+    </div>
+    <div class="premierplan" id="container">
+        <h4>Je pense à un nombre entier entre 1 et 100.</h4>
+        <div class="flex">
+            <div class="moitie">
+                <div class="bloc">
+                    <select id="niveau" class="green" onclick=choixNiveau()>
+                        <option value="facile" class="green">Facile</option>
+                        <option value="moyen" class="orange">Moyen</option>
+                        <option value="difficile" class="red">Difficile</option>
+                    </select>
+                    <div>
+                        <input type="number" id="number">
+                        <input type="submit" value="Soumettre" onclick=testValeurSaisie() id="bouton">
+                    </div>
+                    <div class="decompte">
+                        <span>Il vous reste</span>
+                        <div class="compteur"><span id="compteur">15</span></div>
+                        <span id="tentative">tentatives</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="moitie">
+                <div id="historique"></div>
+            </div>
+        </div>
+    </div>
+    <div class="arriereplan" id="fin">
+        <div class="flex milieu">
+            <h2 id="final"></h2>
+            <input type="hidden" onclick=location.reload() id="reset" value="Recommencer">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
